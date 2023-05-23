@@ -9,6 +9,7 @@ import {AppRouterModule} from "./app-router/app-router.module";
 import { LoginComponent } from './components/login/login.component';
 import {FormsModule} from "@angular/forms";
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import {ForumsModule} from "./forums/forums.module";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     BrowserAnimationsModule,
     MaterialModule,
     AppRouterModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

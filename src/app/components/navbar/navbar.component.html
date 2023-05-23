@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
-  <span class="point display-4" (click)="clicked()">Community</span> &nbsp; &nbsp;
-  <button mat-button>Forums</button> &nbsp;
+  <span class="point display-4" [routerLink]="['']">Community</span> &nbsp; &nbsp;
+  <button mat-button [routerLink]="['forums']">Forums</button> &nbsp;
   <button mat-button>Blogs</button>
   <span class="example-spacer"></span>
   <mat-icon class="point" aria-hidden="false" aria-label="Example home icon" fontIcon="chat"></mat-icon>
