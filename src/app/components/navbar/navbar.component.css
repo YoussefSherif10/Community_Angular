@@ -5,3 +5,7 @@
 .point {
   cursor: pointer;
 }
+
+.example-header-image {
+  background-size: cover;
+}

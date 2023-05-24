@@ -12,7 +12,7 @@ export class ThreadDetailsComponent implements OnInit {
   posts!: Post[];
   thread!: Thread;
   forum_alias!: string;
-  thread_id!: number;
+  thread_id!: string;
 
   constructor(private forumsService: ForumsService,
               private route: ActivatedRoute,

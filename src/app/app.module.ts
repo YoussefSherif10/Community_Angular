@@ -9,13 +9,18 @@ import {AppRouterModule} from "./app-router/app-router.module";
 import {LoginComponent} from './components/login/login.component';
 import {FormsModule} from "@angular/forms";
 import {NotFoundComponent} from './components/not-found/not-found.component';
+import {MatCardModule} from "@angular/material/card";
+import { ChatListComponent } from './components/chat-list/chat-list.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     LoginComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ChatListComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +28,7 @@ import {NotFoundComponent} from './components/not-found/not-found.component';
     MaterialModule,
     AppRouterModule,
     FormsModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

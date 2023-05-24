@@ -1,7 +1,12 @@
 <mat-toolbar color="primary">
-  <span class="point display-4" [routerLink]="['']">Community</span> &nbsp; &nbsp;
+  <span mat-card-avatar class="example-header-image m-1"
+        style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJgO0_CbLQPXms9QnmZ7OkmviTjWudCgcSZw&usqp=CAU')"></span>
+  &nbsp;
+  <span class="point display-4 pb-1" [routerLink]="['']">Community</span> &nbsp; &nbsp;
   <button mat-button [routerLink]="['forums']">Forums</button> &nbsp;
   <button mat-button>Blogs</button>
   <span class="example-spacer"></span>
-  <mat-icon class="point" aria-hidden="false" aria-label="Example home icon" fontIcon="chat"></mat-icon>
+  <mat-icon class="point" aria-hidden="false" aria-label="Example home icon" fontIcon="chat"
+            [routerLink]="[{outlets: {chat: ['users']}}]"></mat-icon> &nbsp; &nbsp;
+  <button mat-raised-button color="accent">Logout</button>
 </mat-toolbar>
