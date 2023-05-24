@@ -27,7 +27,6 @@ export class ForumDetailsComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.forum_alias = this.route.snapshot.paramMap.get("forum_alias");
-    console.log(this.forum_alias);
     if (this.forum_alias) {
       this.forum = this.forumsService.forum(this.forum_alias);
       this.dataSource = new MatTableDataSource(this.forum?.threads);
@@ -48,4 +47,6 @@ export class ForumDetailsComponent implements OnInit, AfterViewInit {
       this.dataSource.paginator.firstPage();
     }
   }
+
+  protected readonly parseInt = parseInt;
 }

@@ -11,27 +11,27 @@
 
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Id </th>
-        <td mat-cell *matCellDef="let row"> {{row["thread_id"]}} </td>
+        <td mat-cell class="point" *matCellDef="let row" [routerLink]="[row['thread_id']]"> {{row["thread_id"]}} </td>
       </ng-container>
 
       <ng-container matColumnDef="thread">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Thread </th>
-        <td mat-cell *matCellDef="let row"> {{row["title"]}} </td>
+        <td mat-cell class="point" *matCellDef="let row" [routerLink]="[row['thread_id']]"> {{row["title"]}} </td>
       </ng-container>
 
       <ng-container matColumnDef="user">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> User </th>
-        <td mat-cell *matCellDef="let row"> {{row["posts"][0]["username"] | titlecase}} </td>
+        <td mat-cell class="point" *matCellDef="let row" [routerLink]="[row['thread_id']]"> {{row["posts"][0]["username"] | titlecase}} </td>
       </ng-container>
 
       <ng-container matColumnDef="last post">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Last Post </th>
-        <td mat-cell *matCellDef="let row"> {{row["posts"][0]["timestamp"] | date:'medium'}} </td>
+        <td mat-cell class="point" *matCellDef="let row" [routerLink]="[row['thread_id']]"> {{row["posts"][0]["timestamp"] | date:'medium'}} </td>
       </ng-container>
 
       <ng-container matColumnDef="posts">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Posts </th>
-        <td mat-cell *matCellDef="let row"> {{row["posts"].length}} </td>
+        <td mat-cell class="point" *matCellDef="let row" [routerLink]="[row['thread_id']]"> {{row["posts"].length}} </td>
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

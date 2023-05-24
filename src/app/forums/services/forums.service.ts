@@ -23,10 +23,10 @@ export class ForumsService {
     }).threads;
   }
 
-  thread(forumAlias: string, threadAlias: string) {
+  thread(forumAlias: string, id: number) {
     // @ts-ignore
     return this.forum(forumAlias).threads.find(row => {
-      return row.alias === threadAlias;
+      return row.thread_id === id;
     });
   }
 
