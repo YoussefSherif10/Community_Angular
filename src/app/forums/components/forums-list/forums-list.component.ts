@@ -8,8 +8,7 @@ import {MatPaginator} from "@angular/material/paginator";
 @Component({
   selector: 'app-forums-list',
   templateUrl: './forums-list.component.html',
-  styleUrls: ['./forums-list.component.css'],
-  providers: [ForumsService],
+  styleUrls: ['./forums-list.component.css']
 })
 export class ForumsListComponent implements OnInit, AfterViewInit {
   forums!: Forum[];

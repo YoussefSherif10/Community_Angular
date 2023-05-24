@@ -44,7 +44,7 @@ export const Users = [
   "mschmidti"
 ];
 
-export const Data = [
+export const Data: Forum[] = [
   {
     "forum_id": 1,
     "title": "Announcements",
