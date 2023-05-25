@@ -34,4 +34,12 @@ Using a data service where a variety of forums are stored, I simulated the backe
 
 ## Application in Action
 
+![](https://github.com/YoussefSherif10/Community_Angular/blob/main/a1.png?raw=true)
 
+![](https://github.com/YoussefSherif10/Community_Angular/blob/main/a2.png?raw=true)
+
+![](https://github.com/YoussefSherif10/Community_Angular/blob/main/a3.png?raw=true)
+
+![](https://github.com/YoussefSherif10/Community_Angular/blob/main/a4.png?raw=true)
+
+![](https://github.com/YoussefSherif10/Community_Angular/blob/main/a5.png?raw=true)
