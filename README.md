@@ -1,27 +1,37 @@
 # Mycommunity
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+community website where users can talk, read blogs, and participate in forums
+There is a Forums area where you can browse through all of the forum's topics before viewing each topic's posts individually. Additionally, there is a Blogs area.
 
-## Development server
+A list of blog entries that you can view separately is visible. Last but not least, you can communicate with an automated robot while perusing the rest of the website using a chat function that appears over the other information. Additionally, the application features login functionality and an error page for unrecognised URLs.
+There is at least one route for each of these features.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+*	List of forums, which also acts as the default view
+*	Individual forum, which shows a list of topics
+*	Individual topic, which shows the posts in the topic
+*	List of blog posts
+*	Individual blog post
+*	Chat box for selecting another user to chat with
+*	Chat box for talking with another user
+*	Login view
+*	Not found error view
 
-## Code scaffolding
+## Structure 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+In order to facilitate separation and improve code maintainability, each feature has its own module. further to provide lazy loading of a module's child components.
 
-## Build
+In order to do many functions simultaneously, I developed auxiliary routes for the talking features.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+I used the auth guard canActivate to protect the views, allowing users to access them using the username they entered while logging in and storing it in local storage.
 
-## Running unit tests
+## Styling
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+I used angular material for styling as well as the bootstrap library. I made sure that the UI is responsive.
 
-## Running end-to-end tests
+## Backend
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Using a data service where a variety of forums are stored, I simulated the backend. The data file also contains information on the users and the chatbot.
 
-## Further help
+## Application in Action
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
