@@ -4,10 +4,10 @@
   &nbsp;
   <span class="point display-4 pb-1" [routerLink]="['']">Community</span> &nbsp; &nbsp;
   <button mat-button [routerLink]="['forums']">Forums</button> &nbsp;
-  <button mat-button>Blogs</button>
+  <button mat-button [routerLink]="['blogs']">Blogs</button>
   <span class="example-spacer"></span>
   <mat-icon class="point" aria-hidden="false" aria-label="Example home icon" fontIcon="chat"
             [routerLink]="[{outlets: {chat: ['users']}}]"></mat-icon> &nbsp; &nbsp;
-  <button mat-raised-button color="accent">Logout</button>
+  <button mat-raised-button color="accent" (click)="logout()">Logout</button>
 </mat-toolbar>
 

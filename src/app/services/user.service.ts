@@ -4,7 +4,7 @@ import {Injectable} from '@angular/core';
   providedIn: 'root'
 })
 export class UserService {
-  username = localStorage.getItem("username") || 'youssef';
+  username = localStorage.getItem("username") || '';
   guest: boolean = (!this.username);
 
   isGuest(): boolean {
